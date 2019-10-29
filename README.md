@@ -1,7 +1,7 @@
 Material
 =====================
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.github.rey5137/material.svg)](https://oss.sonatype.org/content/repositories/releases/com/github/rey5137/material/1.2.1/material-1.2.1.aar)  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Material-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/1685)
+[![](https://jitpack.io/v/rey5137/material.svg)](https://jitpack.io/#rey5137/material) [![Download](https://api.bintray.com/packages/rey5137/maven/material/images/download.svg)](https://bintray.com/artifact/download/rey5137/maven/com/github/rey5137/material/1.3.0/material-1.3.0.aar)  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Material-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/1685)
 
 MaterialLibrary is an Open Source Android library that back-port Material Design components to pre-Lolipop Android. MaterialLibrary's original author is [Rey Pham](https://github.com/rey5137).
 
@@ -11,7 +11,7 @@ MaterialLibrary is an Open Source Android library that back-port Material Design
 * [Donation](#donation)
 * [Contributing](#contributing)
 
-##Features
+## Features
 - [Progress](https://github.com/rey5137/Material/wiki/Progress)
     - Circular
     
@@ -86,36 +86,20 @@ Add Gradle dependency:
 
 ```gradle
 dependencies {
-   compile 'com.github.rey5137:material:1.2.1'
+   implementation 'com.github.rey5137:material:1.3.0'
 }
 ```
 
 * Or
-[Download from Maven](https://oss.sonatype.org/content/repositories/releases/com/github/rey5137/material/1.2.1/material-1.2.1.aar)
+[Download from Jcenter](https://bintray.com/artifact/download/rey5137/maven/com/github/rey5137/material/1.3.0/material-1.3.0.aar)
 
-You can try the SNAPSHOT version:
-
-```gradle
-dependencies {
-   compile 'com.github.rey5137:material:1.2.2-SNAPSHOT'
-}
-```
-Make sure to add the snapshot repository:
-
-```gradle
-repositories {
-    maven {
-        url "https://oss.sonatype.org/content/repositories/snapshots"
-    }
-}
-```
-
-AppCompat and CardView library is required by Material library.
+AppCompat, CardView, RecyclerView library is required by Material library.
 
 ```gradle
 dependencies {
-   compile 'com.android.support:appcompat-v7:22.2.1'
-   compile 'com.android.support:cardview-v7:22.2.1'
+   compile 'androidx.appcompat:appcompat:1.0.0'
+   compile 'androidx.cardview:cardview:1.0.0'
+   compile 'androidx.recyclerview:recyclerview:1.0.0'
 }
 ```
 Now you can use any widget in **com.rey.material.widget** package as you wish. For styling, please view [Wiki](https://github.com/rey5137/Material/wiki). Note that default style of widgets depend on theme of AppCompat. Here is an example:
@@ -145,7 +129,7 @@ You can support the project and thank the author for his hard work.
 <a href='https://pledgie.com/campaigns/28714'><img alt='Click here to lend your support to: Support Material Library project. and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/28714.png?skin_name=chrome' border='0' ></a>
 
 **PayPal**
-- [Donate] (https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=pea5137%40gmail%2ecom&lc=US&item_name=Rey%20Pham&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest)
+- [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=pea5137%40gmail%2ecom&lc=US&item_name=Rey%20Pham&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest)
 
 ## Contributing
 Want to contribute? You are welcome! 
